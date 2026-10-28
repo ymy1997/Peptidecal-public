@@ -1,0 +1,213 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: 70px;
+  background: #fff;
+  border-bottom: 1px solid #d7dee7;
+  box-shadow: none;
+}
+
+.site-header .container.nav-wrap {
+  width: min(100% - 48px, 1220px);
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.site-header .brand {
+  color: #121922;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -.025em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header .brand span {
+  color: #0b57d0;
+}
+
+.site-header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.site-header nav > a,
+.site-header .dropdown-link {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #536172;
+  font-size: .88rem;
+  font-weight: 760;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header nav > a:hover,
+.site-header nav > a[aria-current="page"],
+.site-header .dropdown-link[aria-current="page"],
+.site-header .dropdown-link:hover,
+.site-header .dropdown:focus-within .dropdown-link {
+  color: #0b57d0;
+}
+
+.site-header nav > a[aria-current="page"]::after,
+.site-header .dropdown-link[aria-current="page"]::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: #0b57d0;
+  content: "";
+}
+
+.site-header .dropdown {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.site-header .dropdown-toggle {
+  width: 16px !important;
+  min-width: 16px !important;
+  height: 36px !important;
+  display: grid !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  place-items: center;
+  color: #4b5664 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font: inherit !important;
+  line-height: 1 !important;
+  cursor: pointer;
+  appearance: none;
+}
+
+.site-header .dropdown-toggle::after {
+  width: 6px !important;
+  height: 6px !important;
+  border-right: 1.5px solid currentColor !important;
+  border-bottom: 1.5px solid currentColor !important;
+  content: "" !important;
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.site-header .dropdown-toggle:focus-visible {
+  outline: 2px solid rgba(11, 87, 208, .35) !important;
+  outline-offset: 2px !important;
+  border-radius: 4px !important;
+}
+
+.site-header .dropdown-menu {
+  position: absolute;
+  top: calc(100% - 2px) !important;
+  left: -14px;
+  z-index: 30;
+  display: none;
+  min-width: 280px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #cfd8e3;
+  border-radius: 10px !important;
+  box-shadow: 0 16px 34px rgba(28, 48, 75, .14) !important;
+}
+
+.site-header .dropdown-menu a {
+  height: auto !important;
+  display: block !important;
+  padding: 11px 13px !important;
+  color: #435267 !important;
+  border-radius: 6px;
+  font-size: .83rem !important;
+  font-weight: 720 !important;
+  line-height: 1.35;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.site-header .dropdown-menu a:hover,
+.site-header .dropdown-menu a:focus-visible {
+  color: #0b57d0 !important;
+  background: #eaf2ff;
+}
+
+@media (min-width: 701px) and (hover: hover) {
+  .site-header .dropdown:hover .dropdown-menu,
+  .site-header .dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    height: 62px;
+  }
+
+  .site-header .container.nav-wrap {
+    width: min(100% - 32px, 1220px);
+    height: 62px;
+    gap: 12px;
+  }
+
+  .site-header .brand {
+    font-size: 1rem;
+  }
+
+  .site-header nav {
+    gap: 10px;
+  }
+
+  .site-header .dropdown-toggle {
+    width: 18px !important;
+    min-width: 18px !important;
+  }
+
+  .site-header .dropdown-menu {
+    top: calc(100% - 2px) !important;
+    left: -8px;
+    min-width: min(280px, calc(100vw - 32px));
+  }
+
+  .site-header .dropdown:last-of-type .dropdown-menu {
+    right: -6px;
+    left: auto;
+  }
+
+  .site-header .dropdown.is-open .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 390px) {
+  .site-header .container.nav-wrap {
+    width: min(100% - 24px, 1220px);
+  }
+
+  .site-header nav {
+    gap: 6px;
+  }
+
+  .site-header nav > a,
+  .site-header .dropdown-link {
+    font-size: .72rem;
+  }
+
+  .site-header .dropdown-toggle {
+    width: 17px !important;
+    min-width: 17px !important;
+  }
+}

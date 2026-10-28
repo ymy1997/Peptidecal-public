@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <title>Peptide Reconstitution Calculator — BAC Water &amp; Units</title>
+  <meta name="description" content="Peptide reconstitution calculator: enter vial mg and target dose for a suggested water volume, concentration, and U-100 units. Research reference only.">
+  <link rel="canonical" href="https://peptidecal.net/calculators/peptide-reconstitution-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://peptidecal.net/calculators/peptide-reconstitution-calculator/">
+  <meta property="og:title" content="Peptide Reconstitution Calculator — BAC Water &amp; Units">
+  <meta property="og:description" content="Peptide reconstitution calculator: enter vial mg and target dose for a suggested water volume, concentration, and U-100 units. Research reference only.">
+  <meta property="og:image" content="https://peptidecal.net/assets/lab-measurement-hero.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Peptide Reconstitution Calculator — BAC Water &amp; Units">
+  <meta name="twitter:description" content="Peptide reconstitution calculator: enter vial mg and target dose for a suggested water volume, concentration, and U-100 units. Research reference only.">
+  <meta name="twitter:image" content="https://peptidecal.net/assets/lab-measurement-hero.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","@id":"https://peptidecal.net/calculators/peptide-reconstitution-calculator/#app","name":"Peptide Reconstitution Calculator","url":"https://peptidecal.net/calculators/peptide-reconstitution-calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"A browser utility that suggests a reconstitution water volume from a vial's peptide amount and target dose, then shows the resulting concentration and U-100 syringe mark."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://peptidecal.net/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://peptidecal.net/"},{"@type":"ListItem","position":3,"name":"Peptide Reconstitution Calculator","item":"https://peptidecal.net/calculators/peptide-reconstitution-calculator/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much bacteriostatic water should I add to my peptide?","acceptedAnswer":{"@type":"Answer","text":"Enter your vial's peptide amount and target dose — the tool suggests a water volume that gives a clean U-100 draw, and the concentration and syringe mark update live. Treat it as a starting point and follow your vial's own instructions if it specifies a volume."}},{"@type":"Question","name":"How do I calculate the concentration (mg/mL) after reconstitution?","acceptedAnswer":{"@type":"Answer","text":"Divide the peptide amount on the vial by the water volume used. A 10 mg vial mixed with 2 mL gives 5 mg/mL. Enter both in the calculator and it does the rest."}},{"@type":"Question","name":"My vial is 10 mg — how many units is a dose?","acceptedAnswer":{"@type":"Answer","text":"It depends on the water volume and your target dose. Example: 10 mg in 2 mL = 5 mg/mL; a 250 mcg dose is 0.05 mL = 5 units on a U-100 syringe. Enter your own numbers for your exact mark."}},{"@type":"Question","name":"How many units is 250 mcg on a U-100 syringe?","acceptedAnswer":{"@type":"Answer","text":"Convert the dose to mL by dividing by concentration, then multiply by 100. At 5 mg/mL (10 mg in 2 mL), 250 mcg = 5 units."}},{"@type":"Question","name":"What if my peptide is already mixed?","acceptedAnswer":{"@type":"Answer","text":"This calculator is for dry vials that still need water. If water is already in your vial, use the Peptide Dosage Calculator to turn your concentration into syringe units."}},{"@type":"Question","name":"Is this medical advice?","acceptedAnswer":{"@type":"Answer","text":"No. The tool does unit math and suggests a reconstitution volume; it does not choose a dose, schedule, product, or method of use. For research purposes only."}}]}]}</script>
+  <link rel="stylesheet" href="../../assets/calculator-pages.css">
+</head>
+<body class="calculator-page calculator-planner-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/" aria-label="peptidecal.net home">peptide<span>cal</span>.net</a>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <div class="dropdown"><a class="dropdown-link" href="/" aria-current="page" aria-haspopup="true">Calculators</a><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="calculators-menu" aria-label="Open Calculators menu"></button><div class="dropdown-menu" id="calculators-menu" role="menu"><a href="/calculators/peptide-reconstitution-calculator/" role="menuitem">Peptide Reconstitution Calculator</a><a href="/calculators/peptide-dosage-calculator/" role="menuitem">Peptide Dosage Calculator</a></div></div>
+        <div class="dropdown"><a class="dropdown-link" href="/guides/" aria-haspopup="true">Guides</a><button class="dropdown-toggle" type="button" aria-expanded="false" aria-controls="guides-menu" aria-label="Open Guides menu"></button><div class="dropdown-menu" id="guides-menu" role="menu"><a href="/guides/how-to-reconstitute-peptides/" role="menuitem">How to Reconstitute Peptides</a><a href="/guides/peptide-dosage-chart/" role="menuitem">Peptide Dosage Chart</a></div></div>
+        <a href="/about/">About</a>
+      </nav>
+    </div>
+  </header>
+  <main class="calculator-main">
+    <div class="container">
+      <p class="crumbs"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/">Calculators</a><span aria-hidden="true">/</span>Peptide Reconstitution Calculator</p>
+      <p class="eyebrow">Free, no-sign-up calculator</p>
+      <h1>Peptide Reconstitution Calculator</h1>
+      <p class="tool-intro">Enter your vial amount and desired amount to see a water volume and U-100 mark.</p>
+
+      <section class="calculator-shell" data-calculator-tool data-calculator-mode="planner" aria-label="Peptide reconstitution calculator">
+        <form class="calculator-form-panel" novalidate>
+          <h2>Your values</h2>
+          <p>Start with your vial amount and your own notes.</p>
+        <div class="calculator-field"><label for="recon-total-mg">Peptide in vial</label><div class="calculator-input-wrap"><input id="recon-total-mg" data-total-mg type="number" min="0.0001" step="any" inputmode="decimal" placeholder="Enter amount"><span>mg</span></div><div class="calculator-quick-chips" data-quick-chips="recon-total-mg" aria-label="Common peptide amounts"><button type="button" data-value="5" aria-pressed="false">5</button><button type="button" data-value="10" aria-pressed="false">10</button><button type="button" data-value="15" aria-pressed="false">15</button><button type="button" data-value="20" aria-pressed="false">20</button></div></div>
+          <div class="calculator-field"><label for="recon-amount">Desired amount</label><div class="calculator-target"><input id="recon-amount" data-amount type="number" min="0.0001" step="any" inputmode="decimal" placeholder="Enter amount"><select data-amount-unit aria-label="Desired amount unit"><option value="mg" selected>mg</option><option value="mcg">mcg</option></select></div></div>
+          <div class="calculator-field"><label>U-100 syringe</label><div class="calculator-capacities" role="group" aria-label="U-100 syringe capacity"><button type="button" data-capacity-button="0.3" aria-pressed="false"><strong>0.3 mL</strong><span>30 units</span></button><button type="button" data-capacity-button="0.5" aria-pressed="false"><strong>0.5 mL</strong><span>50 units</span></button><button type="button" data-capacity-button="1" aria-pressed="true"><strong>1 mL</strong><span>100 units</span></button></div><p class="calculator-capacity-note" data-capacity-note>U-100 calibration: 1 unit = 0.01 mL, 100 units = 1 mL.</p><select data-capacity hidden><option value="0.3">0.3</option><option value="0.5">0.5</option><option value="1" selected>1</option></select></div>
+        </form>
+        <section class="calculator-result-panel" data-result-panel aria-live="polite" aria-labelledby="recon-result-heading">
+          <p class="calculator-kicker">Live calculation</p>
+          <h2 id="recon-result-heading" data-result-heading>Enter your values</h2>
+          <p class="calculator-result-line" data-result-line>See how much water to add and what units to draw.</p>
+          <div class="calculator-syringe" aria-label="Visual U-100 syringe measurement"><div class="calculator-syringe-body"><span class="calculator-needle" aria-hidden="true"></span><div class="calculator-barrel"><div class="calculator-scale"><div class="calculator-fill" data-fill></div><div class="calculator-ticks" data-ticks aria-hidden="true"></div><div class="calculator-labels" data-labels aria-hidden="true"></div><div class="calculator-marker" data-marker></div></div><span class="calculator-units-label" aria-hidden="true">UNITS</span></div><span class="calculator-plunger" aria-hidden="true"><span class="calculator-stopper"></span><span class="calculator-flange"></span><span class="calculator-rod"></span><span class="calculator-thumb"></span></span></div><p class="calculator-volume-readout" data-volume-readout>— mL</p></div>
+          <div class="calculator-result-values"><div><span>Concentration</span><strong data-concentration>—</strong></div><div><span data-volume-label>Suggested water volume</span><strong data-volume>—</strong></div><div><span>U-100 mark</span><strong data-units>—</strong></div></div>
+          <p class="calculator-result-note" data-result-note>Suggested volume is based on your vial's peptide amount and a clean U-100 draw. Adjust it to match your vial's instructions — the math updates live.</p>
+        </section>
+      </section>
+    </div>
+
+    <section class="calculator-explainer container">
+      <article class="calculator-overview">
+        <h2>How the peptide reconstitution calculator works</h2>
+        <p>This planner is for a vial of freeze-dried powder: the dry peptide in the vial before water has been added. Enter the total peptide amount printed on the vial, then enter the amount you want to convert. The calculator compares practical water-volume options, calculates the resulting concentration, and selects a setup with a clear U-100 syringe reading.</p>
+        <p>Water volume controls concentration. More water spreads the same peptide amount across more milliliters; less water makes the concentration higher. That concentration is what turns your target amount into mL and then into a U-100 mark. The suggested water volume is a math reference designed around clean, readable syringe units and the capacity you selected.</p>
+        <p>Use the result as a quick way to compare vial setups. The water volume, concentration, draw volume, and syringe mark are tied together, so changing either of your two inputs updates the whole calculation immediately.</p>
+        <p class="formula">concentration (mg/mL) = peptide amount (mg) ÷ suggested water volume (mL)</p>
+        <p class="calculator-guide-link">For the full step-by-step reconstitution method, see <a href="/guides/how-to-reconstitute-peptides/">How to Reconstitute Peptides</a>.</p>
+
+      </article>
+      <aside class="calculator-route"><h2>Already mixed?</h2><p>For a vial with water already added, use the <a href="/calculators/peptide-dosage-calculator/">peptide dosage calculator</a>.</p></aside>
+      <article class="calculator-reference">
+        <section>
+          <h2>How to read your vial label</h2>
+          <div class="calculator-label-grid"><div><h3>1. Total peptide amount</h3><p>Look for the total amount printed on the vial, usually shown in mg. This is the amount of peptide in the dry vial before you add water. Enter that number in the first field. If your label uses mcg, remember that 1 mg equals 1,000 mcg before you enter the total.</p></div><div><h3>2. Amount to convert</h3><p>Enter the amount you want to see on the syringe scale. You can choose mg or mcg beside the field. The calculator converts this amount through the suggested concentration and gives you both the liquid volume and the matching U-100 mark.</p></div><div><h3>3. U-100 syringe capacity</h3><p>Choose the capacity printed on your U-100 syringe: 0.3 mL has 30 units, 0.5 mL has 50 units, and 1 mL has 100 units. Capacity sets the largest volume that can fit in one draw. The planner uses your selection when it ranks clean, readable unit marks.</p></div></div>
+        </section>
+        <section class="calculator-step-section">
+          <h2>mg → mL → U-100 units, step by step</h2>
+          <div class="calculator-step-grid"><p>Here is the full concentration path with simple numbers. A 10 mg vial mixed with 2 mL gives 5 mg/mL: 10 mg ÷ 2 mL = 5 mg/mL. If the amount to convert is 250 mcg, first express it as 0.25 mg. Then divide by concentration: 0.25 mg ÷ 5 mg/mL = 0.05 mL. On a U-100 syringe, 1 mL equals 100 units. Multiply the liquid volume by 100: 0.05 mL × 100 = 5 units. The same relationship drives every result on this page: vial mg becomes concentration, concentration becomes mL, and mL becomes a visible syringe mark.</p></div>
+        </section>
+      </article>
+    </section>
+
+    <section class="calculator-faq container">
+      <h2>Peptide Reconstitution Calculator FAQ</h2>
+      <details><summary>How much bacteriostatic water should I add to my peptide?</summary><p>Enter your vial's peptide amount and target dose — the tool suggests a water volume that gives a clean U-100 draw, and the concentration and syringe mark update live. Treat it as a starting point and follow your vial's own instructions if it specifies a volume.</p></details>
+      <details><summary>How do I calculate the concentration (mg/mL) after reconstitution?</summary><p>Divide the peptide amount on the vial by the water volume used. A 10 mg vial mixed with 2 mL gives 5 mg/mL. Enter both in the calculator and it does the rest.</p></details>
+      <details><summary>My vial is 10 mg — how many units is a dose?</summary><p>It depends on the water volume and your target dose. Example: 10 mg in 2 mL = 5 mg/mL; a 250 mcg dose is 0.05 mL = 5 units on a U-100 syringe. Enter your own numbers for your exact mark.</p></details>
+      <details><summary>How many units is 250 mcg on a U-100 syringe?</summary><p>Convert the dose to mL by dividing by concentration, then multiply by 100. At 5 mg/mL (10 mg in 2 mL), 250 mcg = 5 units.</p></details>
+      <details><summary>What if my peptide is already mixed?</summary><p>This calculator is for dry vials that still need water. If water is already in your vial, use the <a href="/calculators/peptide-dosage-calculator/">Peptide Dosage Calculator</a> to turn your concentration into syringe units.</p></details>
+      <details><summary>Is this medical advice?</summary><p>No. The tool does unit math and suggests a reconstitution volume; it does not choose a dose, schedule, product, or method of use. For research purposes only.</p></details>
+    </section>
+    <section class="calculator-disclaimer">
+      <div class="container">
+        <p><strong>Disclaimer:</strong> For research purposes only. This tool performs mathematical conversions from the values you enter. It does not provide medical advice, dosing recommendations, or default protocol values. All inputs must be confirmed from your own product documentation and verified protocol.</p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-wrap"><span>© 2026 peptidecal.net</span><a href="/about/">About peptidecal.net</a></div></footer>
+  <script defer src="../../assets/nav-dropdown.js"></script>
+  <script defer src="../../assets/calculator-pages.js"></script>
+</body>
+</html>
