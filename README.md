@@ -4,6 +4,13 @@ Peptide Calculator is a browser-based tool for converting the numbers on a vial 
 
 Try it online: [peptidecal.net](https://peptidecal.net)
 
+## Live tools
+
+- [Peptide Calculator](https://peptidecal.net/)
+- [Peptide Reconstitution Calculator](https://peptidecal.net/calculators/peptide-reconstitution-calculator/)
+- [Peptide Dosage Calculator](https://peptidecal.net/calculators/peptide-dosage-calculator/)
+- [Peptide guides](https://peptidecal.net/guides/)
+
 ## What it does
 
 - Calculates concentration, liquid volume, and U-100 syringe units from values you enter.
